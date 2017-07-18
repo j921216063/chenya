@@ -1,29 +1,29 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-
+import H1 from './H1';
+import Em from './Em';
 import A from './A';
-import Img from './Img';
+import Wrapper from './Wrapper';
 import NavBar from './NavBar';
 import HeaderLink from './HeaderLink';
-import Banner from './banner.jpg';
 import messages from './messages';
 
 class Header extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div>
-        <A href="https://twitter.com/mxstbr">
-          <Img src={Banner} alt="react-boilerplate - Logo" />
-        </A>
+      <Wrapper>
+        <H1>
+          <A href="index.html">Arcana <Em>by HTML5 UP</Em></A>
+        </H1>
         <NavBar>
-          <HeaderLink to="/">
-            <FormattedMessage {...messages.home} />
-          </HeaderLink>
+          <FormattedMessage {...messages.home} >
+            {(formattedValue) => (<HeaderLink current>{formattedValue}</HeaderLink>)}
+          </FormattedMessage>
           <HeaderLink to="/features">
             <FormattedMessage {...messages.features} />
           </HeaderLink>
         </NavBar>
-      </div>
+      </Wrapper >
     );
   }
 }

@@ -3,7 +3,11 @@ import styled from 'styled-components';
 import NormalA from 'components/A';
 
 const A = styled(NormalA)`
-  padding: 2em 0;
+  font-size: 1.5em;
+  letter-spacing: -0.025em;
+  border: 0;
+  color: inherit;
+  text-decoration: none;
 `;
 
 export default A;

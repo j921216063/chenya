@@ -1,14 +1,17 @@
 /**
  * A link to a certain page, an anchor tag
  */
-
 import styled from 'styled-components';
 
 const A = styled.a`
-  color: #41addd;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  color: #37c0fb;
+  text-decoration: none;
+  border-bottom: dotted 1px;
 
   &:hover {
-    color: #6cc0e5;
+    color: #37c0fb;
+    border-bottom-color: transparent;
   }
 `;
 
