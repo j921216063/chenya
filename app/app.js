@@ -32,6 +32,7 @@ import LanguageProvider from 'containers/LanguageProvider';
 import '!file-loader?name=[name].[ext]!./favicon.ico';
 import '!file-loader?name=[name].[ext]!./manifest.json';
 import 'file-loader?name=[name].[ext]!./.htaccess'; // eslint-disable-line import/extensions
+import '!!style-loader!css-loader!./vendor/css/font-awesome.min.css'; // eslint-disable-line import/extensions
 /* eslint-enable import/no-webpack-loader-syntax */
 
 import configureStore from './store';
