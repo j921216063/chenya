@@ -24,6 +24,8 @@ import { changeUsername } from './actions';
 import { makeSelectUsername } from './selectors';
 import BannerSection from 'components/BannerSection';
 import HighlightSection from 'components/HighlightSection';
+import HeadingSection from 'components/HeadingSection';
+import PostSection from 'components/PostSection';
 
 export class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   /**
@@ -54,6 +56,8 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
         <div>
           <BannerSection />
           <HighlightSection />
+          <HeadingSection />
+          <PostSection />
           <CenteredSection>
             <H2>
               <FormattedMessage {...messages.startProjectHeader} />

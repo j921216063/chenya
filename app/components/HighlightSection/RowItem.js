@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import cx from 'classnames';
-import bg01 from './bg01.png';
 import H3 from 'components/H3';
 import React from 'react';
+import bg01 from './bg01.png';
 
 const Wrapper = styled.section`
   width: 33.3333333333%;
@@ -25,8 +25,11 @@ const Box = styled.div`
   }
 `;
 
-const AweIcon = ({ className, icon }) => {
-  return <i className={cx(className, icon)}></i>
+const AweIcon = ({ className, icon }) => (<i className={cx(className, icon)}></i>);
+
+AweIcon.propTypes = {
+  className: React.PropTypes.string,
+  icon: React.PropTypes.string.isRequired,
 };
 
 const StyledAweIcon = styled(AweIcon) `
@@ -48,6 +51,7 @@ const StyledAweIcon = styled(AweIcon) `
   cursor: default;
   background-color: #37c0fb;
   background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url(${bg01});
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url(${bg01});
   color: #fff;
   border-radius: 100%;
   display: inline-block;
@@ -68,16 +72,19 @@ const StyledAweIcon = styled(AweIcon) `
   }
 `;
 
-const RowItem = (props) => {
-  return (
-    <Wrapper>
-      <Box>
-        <StyledAweIcon icon={props.icon} />
-        <H3>{props.title}</H3>
-        <p>{props.message}</p>
-      </Box>
-    </Wrapper>
-  )
-}
+const RowItem = (props) => (
+  <Wrapper>
+    <Box>
+      <StyledAweIcon icon={props.icon} />
+      <H3>{props.title}</H3>
+      <p>{props.message}</p>
+    </Box>
+  </Wrapper>
+);
+RowItem.propTypes = {
+  title: React.PropTypes.string,
+  icon: React.PropTypes.string.isRequired,
+  message: React.PropTypes.string,
+};
 
 export default RowItem;
