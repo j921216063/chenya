@@ -32,8 +32,13 @@ const Li = styled.li`
 const Copyright = () => (
   <Wrapper>
     <ul>
-      <Li>&copy; Untitled. All rights reserved</Li>
-      <Li>Design:</Li>
+      <Li>&copy; 2017 Cheng Ye Engineering Consultants Co., Ltd. All rights reserved</Li>
+    </ul>
+    <ul>
+      <Li>高雄市中山二路91號12F之3</Li>
+      <Li>TEL: +886-7-3343062</Li>
+      <Li>FAX: +886-7-5314497</Li>
+      <Li>E-MAIL: simonluv1218@gamil.com</Li>
     </ul>
   </Wrapper>
 );

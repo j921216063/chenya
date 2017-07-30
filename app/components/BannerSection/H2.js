@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const H2 = styled(NormalH2)`
   display: inline-block;
   margin: 0;
-  font-size: 1.25em;
+  font-size: 2em;
   vertical-align: middle;
 `;
 

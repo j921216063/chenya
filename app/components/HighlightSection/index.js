@@ -1,21 +1,21 @@
 import React from 'react';
-import Wrapper from './Wrapper';
+import Section1 from 'components/Section1';
+import Container from 'components/Container';
 import Row from './Row';
 import RowItem from './RowItem';
-import Container from 'components/Container';
 
 class HighlightSection extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <Wrapper>
+      <Section1>
         <Container>
           <Row>
-            <RowItem title={'This Is Important'} message={'Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.'} icon={'fa-paper-plane'} />
-            <RowItem title={'This Is Important'} message={'Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.'} icon={'fa-pencil'} />
-            <RowItem title={'This Is Important'} message={'Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.'} icon={'fa-wrench'} />
+            <RowItem title={'獨立維修'} message={'每部可獨立維修保養，不必全部停機，營運效率高，維護可降低工程風險。'} icon={'fa-wrench'} />
+            <RowItem title={'高效能'} message={'運轉效率比傳統式風力機提高約30%-40%。'} icon={'fa-cogs'} />
+            <RowItem title={'生產製造'} message={'模組化生產可降低製造成本。'} icon={'fa-usd'} />
           </Row>
         </Container>
-      </Wrapper >
+      </Section1 >
     );
   }
 }

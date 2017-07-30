@@ -8,7 +8,7 @@ const Header = styled.header`
   background: #212121;
   background: rgba(27, 27, 27, 0.75);
   color: #fff;
-  padding: 1.5em 0;
+  padding: 1.2em 0;
 `;
 
 export default Header;

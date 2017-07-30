@@ -1,27 +1,29 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import H1 from './H1';
-import Em from './Em';
-import A from './A';
 import Wrapper from './Wrapper';
 import NavBar from './NavBar';
-import HeaderLink from './HeaderLink';
+import NavItem from './NavItem';
 import messages from './messages';
+import Title from './Title';
 
 class Header extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <Wrapper>
-        <H1>
-          <A href="index.html">Arcana <Em>by HTML5 UP</Em></A>
-        </H1>
+        <Title />
         <NavBar>
           <FormattedMessage {...messages.home} >
-            {(formattedValue) => (<HeaderLink current>{formattedValue}</HeaderLink>)}
+            {(formattedValue) => (<NavItem to="/" index>{formattedValue}</NavItem>)}
           </FormattedMessage>
-          <HeaderLink to="/features">
+          <NavItem to="/about">
+            <FormattedMessage {...messages.aboutus} />
+          </NavItem>
+          <NavItem to="/features">
             <FormattedMessage {...messages.features} />
-          </HeaderLink>
+          </NavItem>
+          <NavItem to="/contact">
+            <FormattedMessage {...messages.contactus} />
+          </NavItem>
         </NavBar>
       </Wrapper >
     );

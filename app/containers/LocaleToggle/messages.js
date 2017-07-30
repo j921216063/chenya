@@ -14,4 +14,8 @@ export default defineMessages({
     id: 'boilerplate.containers.LocaleToggle.de',
     defaultMessage: 'de',
   },
+  zhtw: {
+    id: 'boilerplate.containers.LocaleToggle.zhtw',
+    defaultMessage: 'tw',
+  },
 });
