@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import NormalButton from 'components/Button';
+import { Link } from 'react-router';
 
-const Button = styled(NormalButton)`
+const Button = styled(Link)`
   vertical-align: middle;
   margin-left: 1em;
 `;
