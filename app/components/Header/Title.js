@@ -4,19 +4,28 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   padding: 0 0 2.75em 0;
   margin: 0;
-  text-align: center;
+
+  @media screen and (max-width: 480px){
+    text-align: center;
+    font-size: 0.8em;
+  }
+
 `;
 
 const LeftTitle = styled.span`
-    font-size: 4em;
-    font-weight: 900;
-    vertical-align: middle;
-    margin-right: 15px;
-    background: -webkit-linear-gradient(#2F4F4F, #00FA9A);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: #00FA9A;
-    opacity: 0.8;
+  font-size: 4em;
+  font-weight: 900;
+  vertical-align: middle;
+  margin-right: 15px;
+  background: -webkit-linear-gradient(#2F4F4F, #00FA9A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #00FA9A;
+  opacity: 0.8;
+  @media screen and (max-width: 480px){
+    font-size: 3em;
+    margin-right: 3px;
+  }
 `;
 
 const RightContainer = styled.div`

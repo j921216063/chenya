@@ -27,10 +27,10 @@ export function App(props) {
   return (
     <div>
       <Helmet
-        titleTemplate="%s - React.js Boilerplate"
-        defaultTitle="React.js Boilerplate"
+        titleTemplate="%s - 承燁工程顧問股份有限公司"
+        defaultTitle="承燁工程顧問股份有限公司"
         meta={[
-          { name: 'description', content: 'A React.js Boilerplate application' },
+          { name: 'description', content: '風力發電 ,渦輪風力發電機' },
         ]}
       />
       <Header />

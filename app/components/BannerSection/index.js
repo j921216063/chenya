@@ -10,7 +10,7 @@ class BannerSection extends React.Component { // eslint-disable-line react/prefe
     return (
       <Section>
         <Header>
-          <H2>國產新型風將問世 - <Em>台灣之光</Em></H2>
+          <H2>國產新型風機將問世 - <Em>台灣之光</Em></H2>
           <Button to="/features">了解更多</Button>
         </Header>
       </Section >

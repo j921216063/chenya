@@ -61,6 +61,12 @@ const StyledAweIcon = styled(AweIcon) `
   box-shadow: 0 0 0 7px white, 0 0 0 8px #e0e0e0;
   margin: 0 0 2em 0;
 
+  @media screen and (max-width: 840px) {
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0.25em;
+  }
   @media screen and (max-width: 480px) {
     width: 4em;
     height: 4em;
