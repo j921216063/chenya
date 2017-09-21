@@ -18,7 +18,7 @@ const Li = styled.li`
     margin-left: 0;
     padding-left: 0;
   }
-  
+
   /* Mobile */
   @media screen and (max-width: 736px) {
     border: 0;
@@ -38,7 +38,7 @@ const Copyright = () => (
       <Li>高雄市中山二路91號12F之3</Li>
       <Li>TEL: +886-7-3343062</Li>
       <Li>FAX: +886-7-5314497</Li>
-      <Li>E-MAIL: simonluv1218@gamil.com</Li>
+      <Li>E-MAIL: chengyeecc@gmail.com</Li>
     </ul>
   </Wrapper>
 );

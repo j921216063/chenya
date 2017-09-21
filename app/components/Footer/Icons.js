@@ -37,7 +37,7 @@ const A = styled(NormalA) `
 const Icons = () => (
   <Ul>
     <Li><A href="#" className="fa-twitter"></A></Li>
-    <Li><A href="#" className="fa-facebook"></A></Li>
+    <Li><A target="_blank" href="https://www.facebook.com/%E6%89%BF%E7%87%81%E5%B7%A5%E7%A8%8B%E9%A1%A7%E5%95%8F%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8-163975404154538/" className="fa-facebook"></A></Li>
     <Li><A href="#" className="fa-github"></A></Li>
     <Li><A href="#" className="fa-linkedin"></A></Li>
     <Li><A href="#" className="fa-google-plus"></A></Li>
