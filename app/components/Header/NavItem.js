@@ -72,8 +72,8 @@ class NavItem extends React.Component { // eslint-disable-line react/prefer-stat
 NavItem.propTypes = {
   router: PropTypes.object,
   to: PropTypes.string,
-  children: PropTypes.node.isRequir,
-  index: PropTypes.boolean,
+  children: PropTypes.node.isRequired,
+  index: PropTypes.bool,
 };
 
 const RouterNavItem = withRouter(NavItem);

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.section`
-  padding: 5em 0 3em 0;
+  padding: 4em 0 2em 0;
   background: #fff;
   /* Normal */
   @media screen and (max-width: 1280px) {

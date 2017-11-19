@@ -14,7 +14,7 @@ const Wrapper = styled.div`
 
 `;
 
-const Img = styled(ImgNormal)`
+const Img = styled(ImgNormal) `
   width: 5em;
   vertical-align: middle;
   margin-right: 0.3em;
@@ -46,7 +46,7 @@ const EngTitle = styled.div`
 
 const Title = () => (
   <Wrapper>
-    <Img src={logo}/>
+    <Img src={logo} alt="" />
     <RightContainer>
       <ChiTitle>承燁工程顧問股份有限公司</ChiTitle>
       <EngTitle>Cheng Ye Engineering Consultants Co., Ltd</EngTitle>

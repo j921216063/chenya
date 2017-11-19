@@ -21,6 +21,12 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
           <NavItem to="/features">
             <FormattedMessage {...messages.features} />
           </NavItem>
+          <NavItem to="/business">
+            <FormattedMessage {...messages.business} />
+          </NavItem>
+          <NavItem to="/actualperform">
+            <FormattedMessage {...messages.actualperform} />
+          </NavItem>
           <NavItem to="/contact">
             <FormattedMessage {...messages.contactus} />
           </NavItem>

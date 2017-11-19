@@ -18,6 +18,14 @@ export default defineMessages({
     id: 'boilerplate.components.Header.features',
     defaultMessage: '產品介紹',
   },
+  business: {
+    id: 'boilerplate.components.Header.business',
+    defaultMessage: '營業項目',
+  },
+  actualperform: {
+    id: 'boilerplate.components.Header.actualperform',
+    defaultMessage: '實績',
+  },
   contactus: {
     id: 'boilerplate.components.Header.contactus',
     defaultMessage: '聯絡我們',

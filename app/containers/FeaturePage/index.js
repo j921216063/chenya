@@ -21,9 +21,9 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
     return (
       <div>
         <Helmet
-          title="About Us"
+          title="Product Introduction"
           meta={[
-            { name: 'description', content: 'Feature page ' },
+            { name: 'description', content: 'Product Introduction' },
           ]}
         />
         <Section1>
