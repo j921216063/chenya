@@ -58,6 +58,15 @@ export default function createRoutes(store) {
       },
     },
     {
+      path: '/result',
+      name: 'result',
+      getComponent(nextState, cb) {
+        import('containers/ActualResultPage')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    },
+    {
       path: '/about',
       name: 'about',
       getComponent(nextState, cb) {
