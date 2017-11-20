@@ -25,6 +25,18 @@ const ImageBox = styled.div`
   img {
     width:100%;
   }
+  /* Normal */
+  @media screen and (max-width: 1280px) {
+    padding: 20px;
+   }
+  /* Mobile */
+  @media screen and (max-width: 736px) {
+    padding: 10px;
+   }
+  /* Mobile (Portrait) */
+  @media screen and (max-width: 480px) {
+    flex: 0 90%;
+  }
 `;
 
 const ActualResultSection = () => (

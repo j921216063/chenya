@@ -23,6 +23,10 @@ const ImageBox = styled.div`
   img {
     width:100%;
   }
+  @media screen and (max-width: 480px) {
+    padding: 20px;
+    width: 100%; 
+  }
 `;
 
 const GreenEnergySection = () => (

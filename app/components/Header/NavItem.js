@@ -9,6 +9,12 @@ const StyledLink = styled(Link) `
   border: 0;
   display: block;
   padding: 1.5em 0.5em 1.35em 0.5em;
+  @media screen and (max-width: 480px) {
+    padding: 1.5em 0.3em 1.35em 0.3em;
+  }
+  @media screen and (max-width: 412px) {
+    padding: 1.5em 1em 1.35em 1em;
+  }
 `;
 
 const StyledIndexLink = styled(IndexLink) `
@@ -17,6 +23,13 @@ const StyledIndexLink = styled(IndexLink) `
   border: 0;
   display: block;
   padding: 1.5em 0.5em 1.35em 0.5em;
+  @media screen and (max-width: 480px) {
+    padding: 1.5em 0.3em 1.35em 0.3em;
+  }
+  @media screen and (max-width: 412px) {
+    padding: 1.5em 1em 1.35em 1em;
+  }
+  
 `;
 
 const Li = styled(NormalLi) `
@@ -46,6 +59,17 @@ const Li = styled(NormalLi) `
         background-image: url("images/bg01.png");
       }` :
       ''
+  }
+  @media screen and (max-width: 480px) {
+    margin-left: 0.5em
+  }
+  @media screen and (max-width: 412px) {
+    &:first-child {
+      margin-left: 0.5em;
+    }
+    &:before {
+      display:none;
+    }
   }
 `;
 class NavItem extends React.Component { // eslint-disable-line react/prefer-stateless-function

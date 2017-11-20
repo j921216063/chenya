@@ -11,16 +11,44 @@ import messages from './messages';
 const Wrap = styled.div`
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
 `;
 
 const ImageBox = styled.div`
-  padding-right: 30px;
-  /* background:red; */
+  width:50%;
   flex:1;
+  img {
+    width: 80%;
+  }
+  /* Normal */
+  @media screen and (max-width: 1280px) {
+    img {
+      width: 90%;
+    }
+  }
+  /* Mobile */
+  @media screen and (max-width: 736px) {
+    img {
+      width: 90%;
+    }
+  }
+  /* Mobile (Portrait) */
+  @media screen and (max-width: 480px) {
+    flex:1 100%;
+    text-align: center;
+    img {
+      width: 90%;
+    }
+  }
 `;
 const RightContainer = styled.div`
   /* background: blue; */
-  flex: 2;
+  width:50%;
+  flex: 1;
+    /* Mobile (Portrait) */
+  @media screen and (max-width: 480px) {
+    flex: 1 100%;
+  }
 `;
 
 const Title = ({ className, text }) => (
@@ -49,6 +77,27 @@ const StyledTitle = styled(Title) `
     border: 3px solid #1B9FE2;
     border-radius: 10px;
   }
+  /* Normal */
+  @media screen and (max-width: 1000px) {
+    span {
+      min-width: 300px;
+      width: 300px;
+    }
+  }
+  /* Mobile */
+  @media screen and (max-width: 736px) {
+    span {
+      min-width: 300px;
+      width: 100%;
+    }
+  }
+  /* Mobile (Portrait) */
+  @media screen and (max-width: 480px) {
+    /* span {
+      min-width: 300px;
+      width: 300px;
+    } */
+  }
 `;
 
 const Info = styled.div`
@@ -59,6 +108,20 @@ const Info = styled.div`
 const ItemBox = styled.div`
   &:nth-child(even) {
       padding-left: 40%;
+  }
+  /* Normal */
+  @media screen and (max-width: 1280px) {
+    padding-left: 30px;
+    &:nth-child(even) {
+      padding-left: 30px;
+    }
+  }
+  /* Mobile */
+  @media screen and (max-width: 736px) {
+    padding-left: 0;
+    &:nth-child(even) {
+      padding-left: 0;
+    }
   }
 `;
 

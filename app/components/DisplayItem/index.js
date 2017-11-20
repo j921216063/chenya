@@ -4,7 +4,9 @@ import styled from 'styled-components';
 
 const Wrapper = ({ className, children }) => (
   <div className={className}>
-    {children}
+    <div>
+      {children}
+    </div>
   </div>
 );
 
@@ -15,9 +17,29 @@ Wrapper.propTypes = {
 
 const StyledWrapper = styled(Wrapper) `
   width: 300px;
-  height: 400px;
-  flex-direction: column;
-  display: flex;
+  height:0;
+  padding-top: 44%;
+  position: relative;
+  > div{
+    position: absolute;
+    left: 0;
+    right:0;  
+    top: 0;
+    bottom: 0;
+    height: 85%;
+    width: 85%;
+    margin: 0 auto;
+    flex-direction: column;
+    display: flex;
+  }
+
+  /* Mobile (Portrait) */
+  @media screen and (max-width: 480px) {
+    padding-top: 133%;
+    height: 8%;
+     width: 80%;
+  }
+
 `;
 
 const Title = ({ title, className }) => (

@@ -14,12 +14,22 @@ const Wrap = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
+  /* Mobile (Portrait) */
+  @media screen and (max-width: 480px) {
+    flex-wrap: wrap;  
+  }
 `;
 
 const StyledItem = styled(DisplayItem) `
   font-weight: 400;
-  flex:1;
-  padding: 0px 45px;
+  flex: none;
+  width:33%;
+
+  /* Mobile (Portrait) */
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    flex: none;
+  }
 `;
 
 const HybridSystemSection = () => (
