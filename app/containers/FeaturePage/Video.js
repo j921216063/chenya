@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import intro from './intro.mp4';
+
 const VideoBox = styled.span`
   border: 0;
   display: inline-block;

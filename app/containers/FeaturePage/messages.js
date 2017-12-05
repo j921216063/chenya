@@ -10,6 +10,26 @@ export default defineMessages({
     id: 'boilerplate.containers.FeaturePage.header',
     defaultMessage: '產品介紹',
   },
+  video1Header: {
+    id: 'boilerplate.containers.FeaturePage.header',
+    defaultMessage: '橫式渦輪風機',
+  },
+  searchHeader: {
+    id: 'boilerplate.containers.FeaturePage.searchHeader',
+    defaultMessage: '自動循向風力機組',
+  },
+  taiwanAdvantage: {
+    id: 'boilerplate.containers.FeaturePage.taiwanAdvantage',
+    defaultMessage: '台灣的風能優勢',
+  },
+  familyCaseHeader: {
+    id: 'boilerplate.containers.FeaturePage.familyCaseHeader',
+    defaultMessage: '20KW風機=15個家庭用電',
+  },
+  baseUsageHeader: {
+    id: 'boilerplate.containers.FeaturePage.baseUsageHeader',
+    defaultMessage: '4人家庭基礎用電預估',
+  },
   compareHeader: {
     id: 'boilerplate.containers.FeaturePage.compareHeader',
     defaultMessage: '新型渦輪風力發電機與傳統風機之比較',

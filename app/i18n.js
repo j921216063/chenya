@@ -12,7 +12,7 @@ import zhtwLocalData from 'react-intl/locale-data/zh';
 import { DEFAULT_LOCALE } from '../app/containers/App/constants';
 
 import enTranslationMessages from './translations/en.json';
-import deTranslationMessages from './translations/de.json';
+import zhchTranslationMessages from './translations/zhch.json';
 import zhtwTranslationMessages from './translations/zhtw.json';
 
 addLocaleData(enLocaleData);
@@ -21,7 +21,7 @@ addLocaleData(zhtwLocalData);
 
 export const appLocales = [
   'en',
-  'de',
+  'zh',
   'zh-Hant-TW',
 ];
 
@@ -39,6 +39,6 @@ export const formatTranslationMessages = (locale, messages) => {
 
 export const translationMessages = {
   en: formatTranslationMessages('en', enTranslationMessages),
-  de: formatTranslationMessages('de', deTranslationMessages),
+  zh: formatTranslationMessages('zh', zhchTranslationMessages),
   'zh-Hant-TW': formatTranslationMessages('zh-Hant-TW', zhtwTranslationMessages),
 };

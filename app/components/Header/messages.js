@@ -8,7 +8,7 @@ import { defineMessages } from 'react-intl';
 export default defineMessages({
   home: {
     id: 'boilerplate.components.Header.home',
-    defaultMessage: '首頁',
+    defaultMessage: '首頁2',
   },
   aboutus: {
     id: 'boilerplate.components.Header.aboutus',
