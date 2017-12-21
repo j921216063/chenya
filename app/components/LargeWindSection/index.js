@@ -4,7 +4,7 @@ import { FormattedMessage } from 'react-intl';
 import DisplayItem from 'components/DisplayItem';
 import Section1 from 'components/Section1';
 import Container from 'components/Container';
-import H2 from 'components/H2';
+import H1 from 'components/H1';
 import Icon1 from './lw1.png';
 import Icon2 from './lw2.png';
 import Icon3 from './lw3.png';
@@ -36,17 +36,22 @@ const LargeWindSection = () => (
   <Section1>
     <Container>
       <header>
-        <H2>
+        <H1>
           <FormattedMessage {...messages.header} />
-        </H2>
+        </H1>
       </header>
       <Wrap>
-        <StyledItem title="市區大型風塔" image={Icon1} />
-        <StyledItem title="西藏轉經輪設計" image={Icon2} />
-        <StyledItem title="各規模電廠" image={Icon3} />
+        <FormattedMessage {...messages.city} >
+          {(formattedValue) => (<StyledItem title={formattedValue} image={Icon1} subtitle="Large Wind Tower In City" />)}
+        </FormattedMessage>
+        <FormattedMessage {...messages.wheel} >
+          {(formattedValue) => (<StyledItem title={formattedValue} image={Icon2} subtitle="Tibet Prayer Wheel Design" />)}
+        </FormattedMessage>
+        <FormattedMessage {...messages.farms} >
+          {(formattedValue) => (<StyledItem title={formattedValue} image={Icon3} subtitle="Wind Farms of Various Size" />)}
+        </FormattedMessage>
       </Wrap>
     </Container>
   </Section1>
 );
-
 export default LargeWindSection;

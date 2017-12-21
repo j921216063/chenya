@@ -1,7 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import ImgNormal from 'components/Img';
+import LocaleToggle from 'containers/LocaleToggle';
+import { FormattedMessage } from 'react-intl';
 import logo from './logo.png';
+import messages from './messages';
 
 const Wrapper = styled.div`
   padding: 0 0 2.75em 0;
@@ -44,13 +47,19 @@ const EngTitle = styled.div`
   color: #808080;
 `;
 
+const StyledToggle = styled(LocaleToggle) `
+  float: right;
+  margin-right: 30px;
+`;
+
 const Title = () => (
   <Wrapper>
     <Img src={logo} alt="" />
     <RightContainer>
-      <ChiTitle>承燁工程顧問股份有限公司</ChiTitle>
+      <ChiTitle><FormattedMessage {...messages.company} /></ChiTitle>
       <EngTitle>Cheng Ye Engineering Consultants Co., Ltd</EngTitle>
     </RightContainer>
+    <StyledToggle />
   </Wrapper>
 );
 

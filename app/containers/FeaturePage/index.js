@@ -69,73 +69,73 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
                 <FormattedMessage {...messages.compareHeader} />
               </H2>
               <CompareSection>
-                <ImgC1 src={compare1} />
+                <ImgC1 src={compare1} alt="" />
                 <CompareContent>
                   <FlexContainer justify="space-between">
-                    <TextBox width="35%" background="#444444">傳統式風機</TextBox>
-                    <TextBox width="35%" background="#444444">渦輪式風機</TextBox>
+                    <TextBox width="35%" background="#444444"><FormattedMessage {...messages.tradWindFram} /></TextBox>
+                    <TextBox width="35%" background="#444444"><FormattedMessage {...messages.newWindFarm} /></TextBox>
                   </FlexContainer>
                   <FlexContainerR wrap="wrap">
                     <FlexLeft>
-                      <TextBoxMargin width="66%" background="#FFAA33">成本低</TextBoxMargin>
+                      <TextBoxMargin width="66%" background="#FFAA33"><FormattedMessage {...messages.lowCost} /></TextBoxMargin>
                     </FlexLeft>
                     <FlexRight>
-                      <TextBoxMargin width="66%" background="#886600">無噪音</TextBoxMargin>
-                      <TextBoxMargin width="66%" background="#888800">低損耗</TextBoxMargin>
-                      <TextBoxMargin width="66%" background="#EE7700">高效能</TextBoxMargin>
-                      <TextBoxMargin width="66%" background="#666666">模組化</TextBoxMargin>
+                      <TextBoxMargin width="66%" background="#886600"><FormattedMessage {...messages.noNoice} /></TextBoxMargin>
+                      <TextBoxMargin width="66%" background="#888800"><FormattedMessage {...messages.lowLoss} /></TextBoxMargin>
+                      <TextBoxMargin width="66%" background="#EE7700"><FormattedMessage {...messages.highEff} /></TextBoxMargin>
+                      <TextBoxMargin width="66%" background="#666666"><FormattedMessage {...messages.modular} /></TextBoxMargin>
                     </FlexRight>
                     <Rectangle width="100%" height="10px" />
                   </FlexContainerR>
                   <Triangle />
                 </CompareContent>
-                <ImgC2 src={compare2} />
+                <ImgC2 src={compare2} alt="" />
               </CompareSection>
               <Table>
                 <tbody>
                   <tr>
-                    <Td odd>啟動風速</Td>
-                    <Td odd>啟動風速1m/s；發電風速2m/s。</Td>
+                    <Td odd><FormattedMessage {...messages.t1r1c1} /></Td>
+                    <Td odd><FormattedMessage {...messages.t1r1c2} /></Td>
                   </tr>
                   <tr>
-                    <Td>噪音</Td>
-                    <Td>運轉極靜音，約35分貝以內。</Td>
+                    <Td><FormattedMessage {...messages.t1r2c1} /></Td>
+                    <Td><FormattedMessage {...messages.t1r2c2} /></Td>
                   </tr>
                   <tr>
-                    <Td odd>結構</Td>
-                    <Td odd>全鋼骨建構可抗強烈颱風，受天災引響度小，可堆疊架設單位面積效率高，機體成本低，製造可模組化放大規格。</Td>
+                    <Td odd><FormattedMessage {...messages.t1r3c1} /></Td>
+                    <Td odd><FormattedMessage {...messages.t1r3c2} /></Td>
                   </tr>
                   <tr>
-                    <Td>生產製造</Td>
-                    <Td>模組化生產可降低製造成本。</Td>
+                    <Td><FormattedMessage {...messages.t1r4c1} /></Td>
+                    <Td><FormattedMessage {...messages.t1r4c2} /></Td>
                   </tr>
                   <tr>
-                    <Td odd>現場施工</Td>
-                    <Td odd>不需特殊高空重吊機具，安裝時受天候影響較小。</Td>
+                    <Td odd><FormattedMessage {...messages.t1r5c1} /></Td>
+                    <Td odd><FormattedMessage {...messages.t1r5c2} /></Td>
                   </tr>
                   <tr>
-                    <Td>維修</Td>
-                    <Td>每部可獨立維修保養 ，不必全部停機，營運效率高，維護可降低工程風險。</Td>
+                    <Td><FormattedMessage {...messages.t1r6c1} /></Td>
+                    <Td><FormattedMessage {...messages.t1r6c2} /></Td>
                   </tr>
                   <tr>
-                    <Td odd>效率</Td>
-                    <Td odd>運轉效率比傳統式風力機提高約30%-40%。</Td>
+                    <Td odd><FormattedMessage {...messages.t1r7c1} /></Td>
+                    <Td odd><FormattedMessage {...messages.t1r7c2} /></Td>
                   </tr>
                   <tr>
-                    <Td>使用面積</Td>
-                    <Td>風塔間效率互相增加可採陣列式，舊電廠或停用燃煤電廠，只要風量符合要求，可轉為此型風力電廠。</Td>
+                    <Td><FormattedMessage {...messages.t1r8c1} /></Td>
+                    <Td><FormattedMessage {...messages.t1r8c2} /></Td>
                   </tr>
                   <tr>
-                    <Td odd>風機佈置</Td>
-                    <Td odd>風機間隔為直徑的一半，後排風機可部置於二機之間，造成一片風牆，完全吸納風量。</Td>
+                    <Td odd><FormattedMessage {...messages.t1r9c1} /></Td>
+                    <Td odd><FormattedMessage {...messages.t1r9c2} /></Td>
                   </tr>
                   <tr>
-                    <Td>使用風力</Td>
-                    <Td>可調式閘門、可集風、可抗超強風，對風量可大部分使用。依風速不同自動增壓、減壓、關閉，提高功率及安全性。依風向不同自動尋風工作，增加效能。</Td>
+                    <Td><FormattedMessage {...messages.t1r10c1} /></Td>
+                    <Td><FormattedMessage {...messages.t1r10c2} /></Td>
                   </tr>
                   <tr>
-                    <Td odd>發電功率</Td>
-                    <Td odd>渦輪機發電功率每平方公尺約500瓦，Cp值約60%。</Td>
+                    <Td odd><FormattedMessage {...messages.t1r11c1} /></Td>
+                    <Td odd><FormattedMessage {...messages.t1r11c2} /></Td>
                   </tr>
                 </tbody>
               </Table>
@@ -173,8 +173,8 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
                 <WrapImgFamily>
                   <ImgFamily src={familycase} alt="台灣平均風速" />
                 </WrapImgFamily>
-                <TextFamily>每月發電量6000度</TextFamily>
-                <TextFamily>每家庭平均用電391度/月</TextFamily>
+                <TextFamily> <FormattedMessage {...messages.familyCaset1} /></TextFamily>
+                <TextFamily> <FormattedMessage {...messages.familyCaset2} /></TextFamily>
               </FlexContainer>
             </Article>
             <Article>
@@ -186,66 +186,66 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
               <Table>
                 <thead>
                   <tr>
-                    <TdHead >電器名稱</TdHead>
-                    <TdHead >消耗電力(W)</TdHead>
-                    <TdHead >每月使用時間(小時)</TdHead>
-                    <TdHead >每月耗電量(度)</TdHead>
+                    <TdHead ><FormattedMessage {...messages.t2r1c1} /></TdHead>
+                    <TdHead ><FormattedMessage {...messages.t2r1c2} /></TdHead>
+                    <TdHead ><FormattedMessage {...messages.t2r1c3} /></TdHead>
+                    <TdHead ><FormattedMessage {...messages.t2r1c4} /></TdHead>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <TdHead odd>冷氣機(1噸)</TdHead>
+                    <TdHead odd><FormattedMessage {...messages.t2r2c1} /></TdHead>
                     <Td odd>900</Td>
-                    <Td odd>8小時*30天=240</Td>
+                    <Td odd>8<FormattedMessage {...messages.hour} />*30<FormattedMessage {...messages.day} />=240</Td>
                     <Td odd>216</Td>
                   </tr>
                   <tr>
-                    <TdHead>冰箱(320公升)</TdHead>
+                    <TdHead><FormattedMessage {...messages.t2r3c1} /></TdHead>
                     <Td>130</Td>
-                    <Td>24小時*30天=720</Td>
+                    <Td>24<FormattedMessage {...messages.hour} />*30<FormattedMessage {...messages.day} />=720</Td>
                     <Td>93.6</Td>
                   </tr>
                   <tr>
-                    <TdHead odd>電視機</TdHead>
+                    <TdHead odd><FormattedMessage {...messages.t2r4c1} /></TdHead>
                     <Td odd>140</Td>
-                    <Td odd>2小時*30天=120</Td>
+                    <Td odd>2<FormattedMessage {...messages.hour} />*30<FormattedMessage {...messages.day} />=120</Td>
                     <Td odd>8.4</Td>
                   </tr>
                   <tr>
-                    <TdHead>洗衣機</TdHead>
+                    <TdHead><FormattedMessage {...messages.t2r5c1} /></TdHead>
                     <Td>420</Td>
-                    <Td>1小時*30天=30</Td>
+                    <Td>1<FormattedMessage {...messages.hour} />*30<FormattedMessage {...messages.day} />=30</Td>
                     <Td>12.6</Td>
                   </tr>
                   <tr>
-                    <TdHead odd>電腦</TdHead>
+                    <TdHead odd><FormattedMessage {...messages.t2r6c1} /></TdHead>
                     <Td odd>370</Td>
-                    <Td odd>2小時*30天=120</Td>
+                    <Td odd>2<FormattedMessage {...messages.hour} />*30<FormattedMessage {...messages.day} />=120</Td>
                     <Td odd>22.2</Td>
                   </tr>
                   <tr>
-                    <TdHead>手機充電</TdHead>
+                    <TdHead><FormattedMessage {...messages.t2r7c1} /></TdHead>
                     <Td>15</Td>
-                    <Td>1小時*30天=30</Td>
+                    <Td>1<FormattedMessage {...messages.hour} />*30<FormattedMessage {...messages.day} />=30</Td>
                     <Td>0.45</Td>
                   </tr>
                   <tr>
-                    <TdHead odd>日光燈*6</TdHead>
+                    <TdHead odd><FormattedMessage {...messages.t2r8c1} /></TdHead>
                     <Td odd>25*6=150</Td>
-                    <Td odd>5小時*30天=150</Td>
+                    <Td odd>5<FormattedMessage {...messages.hour} />*30<FormattedMessage {...messages.day} />=150</Td>
                     <Td odd>22.5</Td>
                   </tr>
                   <tr>
-                    <TdHead>省電燈泡*6</TdHead>
+                    <TdHead><FormattedMessage {...messages.t2r9c1} /></TdHead>
                     <Td>17*6=102</Td>
-                    <Td>5小時*30天=150</Td>
+                    <Td>5<FormattedMessage {...messages.hour} />*30<FormattedMessage {...messages.day} />=150</Td>
                     <Td>15.3</Td>
                   </tr>
                   <tr>
                     <TdHead odd></TdHead>
                     <Td odd></Td>
                     <Td odd></Td>
-                    <Td odd>每月耗電量總計<HighLightText> 391 </HighLightText>度/月</Td>
+                    <Td odd><FormattedMessage {...messages.total} /><HighLightText> 391 </HighLightText><FormattedMessage {...messages.premoth} /></Td>
                   </tr>
                 </tbody>
               </Table>

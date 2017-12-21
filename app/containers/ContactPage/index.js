@@ -49,14 +49,14 @@ export default class ContactPage extends React.Component { // eslint-disable-lin
                   <FormattedMessage {...messages.company} />
                 </h3>
                 <p>
-                  <strong>諮詢專線：</strong>+886-7-3343062
+                  <strong> <FormattedMessage {...messages.phone} /></strong>+886-7-3343062
                 <br />
-                  <strong>傳真專線：</strong>+886-7-5314497
+                  <strong> <FormattedMessage {...messages.fax} /></strong>+886-7-5314497
                 <br />
-                  <strong>客服信箱：</strong><a href="mailto:chengyeecc@gmail.com">chengyeecc@gmail.com</a>
+                  <strong> <FormattedMessage {...messages.email} /></strong><a href="mailto:chengyeecc@gmail.com">chengyeecc@gmail.com</a>
                   <br />
-                  <strong>公司地址：</strong>高雄市中山二路91號12F之3
-                <br />
+                  <strong> <FormattedMessage {...messages.address} /></strong><FormattedMessage {...messages.addrCont} />
+                  <br />
                 </p>
               </ContactSection>
             </article>

@@ -41,9 +41,15 @@ const HybridSystemSection = () => (
         </H2>
       </header>
       <Wrap>
-        <StyledItem title="庭院街燈監視系統" titlebg="#3CBABC" image={Icon1} />
-        <StyledItem title="貨櫃屋結合" titlebg="#37A2A2" image={Icon2} />
-        <StyledItem title="展場活用場地" titlebg="#359392" image={Icon3} />
+        <FormattedMessage {...messages.title1} >
+          {(message) => (<StyledItem title={message} titlebg="#3CBABC" image={Icon1} subtitle="Yard And Street Light Monitoring System" />)}
+        </FormattedMessage>
+        <FormattedMessage {...messages.title2} >
+          {(message) => (<StyledItem title={message} titlebg="#37A2A2" image={Icon2} subtitle="Container House Combination" />)}
+        </FormattedMessage>
+        <FormattedMessage {...messages.title3} >
+          {(message) => (<StyledItem title={message} titlebg="#359392" image={Icon3} subtitle="Exhibition Field Wisely Used" />)}
+        </FormattedMessage>
       </Wrap>
     </Container>
   </Section1>

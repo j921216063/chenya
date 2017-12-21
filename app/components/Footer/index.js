@@ -1,5 +1,4 @@
 import React from 'react';
-import LocaleToggle from 'containers/LocaleToggle';
 import Wrapper from './Wrapper';
 import Icons from './Icons';
 import Copyright from './Copyright';
@@ -9,9 +8,6 @@ function Footer() {
     <Wrapper>
       <Icons />
       <Copyright />
-      <section>
-        <LocaleToggle />
-      </section>
     </Wrapper>
   );
 }

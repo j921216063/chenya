@@ -42,12 +42,18 @@ const StyledWrapper = styled(Wrapper) `
 
 `;
 
-const Title = ({ title, className }) => (
-  <div className={className}><span>{title}</span></div>
+const Title = ({ title, subtitle, className }) => (
+  <div className={className}>
+    <div>
+      <div className="title">{title}</div>
+      <div className="subtitle">{subtitle}</div>
+    </div>
+  </div>
 );
 
 Title.propTypes = {
   title: React.PropTypes.string,
+  subtitle: React.PropTypes.string,
   className: React.PropTypes.string,
 };
 
@@ -62,9 +68,15 @@ const StyledTitle = styled(Title) `
   border-top-right-radius: 15px;
   border: 3px solid #1B9FE2;
   border-bottom-style: none;
-  span {
+  > div {
+    display: inline-block;
     vertical-align: middle;
-    font-size: 26px
+    .title {
+      font-size: 26px;
+    }
+    .subtitle {
+      font-size: 16px;
+    }
   }
   &:before {
     display: inline-block;
@@ -76,7 +88,7 @@ const StyledTitle = styled(Title) `
 
 const StyledImage = styled.div`
   width: 100%;
-  flex: 9;
+  flex: 7;
   background: #eee;
   background-image: url(${(props) => props.image});
   background-position: center;
@@ -89,9 +101,9 @@ const StyledImage = styled.div`
 `;
 
 
-const DisplayItem = ({ className, title, image, titlebg }) => (
+const DisplayItem = ({ className, title, subtitle, image, titlebg }) => (
   <StyledWrapper className={className}>
-    <StyledTitle title={title} titlebg={titlebg} />
+    <StyledTitle title={title} subtitle={subtitle} titlebg={titlebg} />
     <StyledImage image={image} />
   </StyledWrapper>
 );
@@ -99,6 +111,7 @@ const DisplayItem = ({ className, title, image, titlebg }) => (
 DisplayItem.propTypes = {
   className: React.PropTypes.string,
   title: React.PropTypes.string,
+  subtitle: React.PropTypes.string,
   image: React.PropTypes.string,
   titlebg: React.PropTypes.string,
 };

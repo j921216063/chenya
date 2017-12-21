@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import cx from 'classnames';
 import H3 from 'components/H3';
+import { FormattedMessage } from 'react-intl';
 import React from 'react';
 import bg01 from './bg01.png';
 
@@ -82,15 +83,15 @@ const RowItem = (props) => (
   <Wrapper>
     <Box>
       <StyledAweIcon icon={props.icon} />
-      <H3>{props.title}</H3>
-      <p>{props.message}</p>
+      <H3><FormattedMessage {...props.title} /></H3>
+      <p><FormattedMessage {...props.message} /></p>
     </Box>
   </Wrapper>
 );
 RowItem.propTypes = {
-  title: React.PropTypes.string,
+  title: React.PropTypes.object,
   icon: React.PropTypes.string.isRequired,
-  message: React.PropTypes.string,
+  message: React.PropTypes.object,
 };
 
 export default RowItem;

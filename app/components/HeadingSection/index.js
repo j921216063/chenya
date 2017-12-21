@@ -1,16 +1,18 @@
 import React from 'react';
 import Container from 'components/Container';
+import { FormattedMessage } from 'react-intl';
 import Wrapper from './Wrapper';
 import Header from './Header';
 import H2 from './H2';
 import P from './P';
+import messages from './messages';
 
 const HeadingSection = () => (
   <Wrapper>
     <Container>
       <Header>
-        <H2>新型渦輸風力發電機</H2>
-        <P>落實國家綠能產業的應用，增強國家競爭力</P>
+        <H2><FormattedMessage {...messages.title} /></H2>
+        <P><FormattedMessage {...messages.subtitle} /></P>
       </Header>
     </Container>
   </Wrapper>
