@@ -84,6 +84,40 @@ const StyledTitle = styled(Title) `
     height: 100%;
     vertical-align: middle;
   }
+  /* Narrower */
+  @media screen and (max-width: 840px) {
+    > div {
+      .title {
+        font-size: 18px;
+      }
+      .subtitle {
+        font-size: 12px;
+      }
+    }
+  }
+    /* Narrower */
+   @media screen and (max-width: 736px) {
+    > div {
+      .title {
+        font-size: 16px;
+      }
+      .subtitle {
+        font-size: 12px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    > div {
+      .title {
+        font-size: 24px;
+        line-height: 1.5;
+      }
+      .subtitle {
+        font-size: 14px;
+      }
+    }
+  }
 `;
 
 const StyledImage = styled.div`

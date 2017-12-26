@@ -14,7 +14,10 @@ export default styled.nav`
     background-color: #37c0fb;
     background-image: url(${bg01});
   }
-  @media screen and (max-width: 412px) {
+  @media screen and (max-width: 420px) {
+      &:after {
+      clear: both;
+    }
     text-align: left;
   }
 `;
