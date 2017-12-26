@@ -20,9 +20,12 @@ function Toggle(props) {
   }
 
   return (
-    <Select value={props.value} onChange={props.onToggle}>
-      {content}
-    </Select>
+    <div>
+      <i className="fa fa-caret-square-o-down" />
+      <Select value={props.value} onChange={props.onToggle}>
+        {content}
+      </Select>
+    </div>
   );
 }
 
